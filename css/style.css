@@ -1,0 +1,281 @@
+@font-face
+{
+    font-family: web;
+    src: url(font/YouTubeSansBlack.otf);
+    font-family: web1;
+    src: url(font/YouTubeSansBold.otf);
+    font-family: web2;
+    src: url(font/YouTubeSansDarkMedium.otf);
+    font-family: web3;
+    src: url(font/YouTubeSansDarkRegular.otf);
+}
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style-type: none;
+    /* outline: auto; */
+    overflow-x: hidden;
+    font-family: web3;
+}
+
+:root
+{
+    --lw:rgb(241, 238, 238);
+}
+
+.header
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    /* margin:10px 15px; */
+    padding: 20px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+    background-color: white;
+    
+    
+}
+
+.header i
+{
+    font-size: 26px;
+}
+
+.header div 
+{
+    display: flex;
+    gap: 30px;
+    
+}
+
+.yt span
+{
+    margin-left:-30px ;
+}
+
+.header .search-bar input
+{
+    width: 500px;
+    border-radius: 10px;
+    border:1px solid black;
+    padding: 5px;
+}
+
+.search-bar 
+{
+    position: relative;
+    padding: 5px;
+}
+
+.bx-search
+{
+    margin-left:-20px ;
+    border-left:1px solid black ;
+    position: absolute;
+    top: 5px;
+    right:70px;
+    padding: 3px;
+    background-color: var(--lw);
+    border-radius: 0px 10px 10px 0px;
+    border: 1px solid black;
+    
+}
+
+.bx-microphone
+{
+    background-color: var(--lw);
+
+    border-radius: 50%;
+    padding: 4px;
+}
+
+.header-last-icon
+{
+    margin-right:30px ;
+}
+
+
+/* side bar  */
+
+.sidebar-left
+{
+    height: 100vh;
+    width: 250px;  
+    padding: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    position: fixed;
+    top: 70px;
+    left: 0px;
+    z-index: 100;
+    background-color: white;
+
+    
+
+}
+
+.categories
+{
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.inside-categories-inside
+{
+    display: flex;
+    gap: 30px;
+    padding-bottom: 20px;
+}
+
+.inside-categories-inside i
+{
+    font-size: 22px;
+}
+
+
+hr
+{
+    width: 180px;
+    margin-left: -10px;
+    margin-bottom: 20px;
+}
+
+
+.copyright
+{
+    padding: 5px;
+    
+}
+
+.channel-pic1
+{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+
+
+
+/* below navbar  */
+
+
+.below-navbar
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    position: fixed;
+    top: 65px;
+    left: 250px;
+    width:100vw;
+    white-space:nowrap;
+    z-index: 100;
+    background-color: white;
+    padding: 10px;
+
+
+}
+
+.below-navbar span
+{
+    background-color: var(--lw);
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+
+/* video part  */
+
+.videos-portion
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    gap: 25px;
+    padding: 20px;
+    width: 90%;
+    height: 670px;
+    position: relative;
+    top: 110px;
+    left: 250px;
+    background-color: white;
+
+   
+
+}
+
+.portion
+{
+    width: 350px;
+
+}
+
+
+.portion div
+{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bol;
+    gap:10px;
+    
+    
+    
+
+}
+
+.inside-logo
+{
+    margin-top: -13px;
+}
+
+.channel-pic
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.poster 
+{
+    border-radius: 10px;
+    width:350px;
+    height: 200px;
+    background-color: brown;
+    
+}
+
+.time
+{
+    position: relative;
+    top: -30px;
+    left: 310px;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+}
+
+.channel-name
+{
+    margin-left:48px;
+    margin-top: -5px;
+    color: rgb(91, 91, 91);
+    
+}
